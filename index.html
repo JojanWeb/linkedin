@@ -55,10 +55,56 @@
           </ul>
           <div class="profile">
             <div class="profile__online">
-              <img src="img/user-1.png" alt="" class="profile__image-online">
+              <label for="profile-menu">
+                <img src="img/user-1.png" class="profile__image-online">
+              </label>
+            </div>
+          </div>
+<!-- ffffff -->
+          <input type="checkbox" name="profile-menu" id="profile-menu" class="input__profile-menu">
+          <div class="profile-menu" id="active-profile-menu">
+            <div class="profile-menu__user-info">
+              <img src="img/imagen-perfil-laboral.png" alt="" class="user-info__foto-perfil">
+                
+              <div class="user-info__name-box">
+                <h3 class="user-info__name">Rayan Walton</h3>
+                <a href="#" class="user-info__see-profile">Seeyour Profile</a>
+              </div>
+            </div>
+
+            <hr class="profile-menu__separacion">
+
+            <div class="profile-menu__links-box">
+              <a href="#" class="link-box__link">
+                <img src="img/feedback.png" alt="" class="link-box__image-action">
+                <p class="link-box__name-action">Give Feedback</p>
+                <span>></span>
+              </a>
+              <a href="#" class="link-box__link">
+                <img src="img/setting.png" alt="" class="link-box__image-action">
+                <p class="link-box__name-action">Setting & Privacy</p>
+                <span>></span>
+              </a>
+              <a href="#" class="link-box__link">
+                <img src="img/help.png" alt="" class="link-box__image-action">
+                <p class="link-box__name-action">Help & Support</p>
+                <span>></span>
+              </a>
+              <a href="#" class="link-box__link">
+                <img src="img/display.png" alt="" class="link-box__image-action">
+                <p class="link-box__name-action">Display &Accessibility</p>
+                <span>></span>
+              </a>
+              <a href="#" class="link-box__link">
+                <img src="img/logout.png" alt="" class="link-box__image-action">
+                <p class="link-box__name-action">Logout</p>
+                <span>></span>
+              </a>
             </div>
           </div>
         </nav>
+        
+        
       </div>
     </div>
   </header>
@@ -102,9 +148,105 @@
           </a>
         </div>
       </div>
+
+      <div class="sidebar__activity">
+
+        <div class="activity-lista-box">
+          <h3 class="activity-lista-box__title">RECENT</h3>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-time'></i>
+            <p class="item__description">Web Developer</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-time'></i>
+            <p class="item__description">User Interface</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-time'></i>
+            <p class="item__description">Online Learning</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-time'></i>
+            <p class="item__description">Learn Online</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-time'></i>
+            <p class="item__description">Code Better</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-time'></i>
+            <p class="item__description">Group Learning</p>
+          </a>
+        </div>
+
+        <div class="activity-lista-box">
+          <h3 class="activity-lista-box__title">GROUPS</h3>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-male-female'></i>
+            <p class="item__description">Web Desing Groups</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-male-female'></i>
+            <p class="item__description">HTML & CSS Learners</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-male-female'></i>
+            <p class="item__description">Python & JavaScript Group</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-male-female'></i>
+            <p class="item__description">Learn Coding Online</p>
+          </a>
+        </div>
+
+        <div class="activity-lista-box">
+          <h3 class="activity-lista-box__title">HASHTAG</h3>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-hash' ></i>
+            <p class="item__description">webdevelopment</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-hash' ></i>
+            <p class="item__description">userinterface</p>
+          </a>
+          <a href="#" class="activity-lista-box__item">
+            <i class='item__icono bx bx-hash' ></i>
+            <p class="item__description">onlinelearning</p>
+          </a>
+        </div>
+
+        <div class="discover-more-box-link">
+          <a href="#" class="discover-more-link">Discover more</a>
+        </div>
+      </div>
     </aside>
 
-    <main class="main"></main>
+    <main class="main">
+      <div class="crear-post-box">
+        <div class="crear-post-box__top">
+          <img src="img/imagen-perfil-laboral.png" alt="" class="top__imagen profile__image-online">
+          <textarea name="" id="" placeholder="Write a Post" class="top__escribir"></textarea>
+        </div>
+
+        <div class="crear-post-box__links">
+          <a href="#" class="crear-post-box__link">
+            <i class='link__icon bx bxs-camera' ></i>
+            <span class="link__nombre">Photo</span>
+          </a>
+          <a href="#" class="crear-post-box__link">
+            <i class='link__icon bx bxs-video' ></i>
+            <span class="link__nombre">Video</span>
+          </a>
+          <a href="#" class="crear-post-box__link">
+            <i class='link__icon bx bx-merge' ></i>
+            <span class="link__nombre">Event</span>
+          </a>
+          <a href="#" class="crear-post-box__link">
+            <span class="link__nombre">Post</span>
+          </a>
+        </div>
+      </div>
+    </main>
     <aside class="aside"></aside>
   </div>
 </body>
