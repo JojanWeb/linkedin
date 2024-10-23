@@ -1,42 +1,41 @@
 @import url(style.css);
 
-a{
+a {
   text-decoration: none;
   color: #000;
 }
 
-.contenedor__layout{
+.contenedor__layout {
   display: grid;
   grid-template-columns: 280px 1fr 280px;
   grid-template-rows: auto;
-  grid-template-areas: 
-  'sidebar main aside';
+  grid-template-areas: "sidebar main aside";
   height: 100vh;
   padding-top: 20px;
   gap: 1rem;
 }
 
-.sidebar{
+.sidebar {
   grid-area: sidebar;
 }
 
-.sidebar__profile-box{
+.sidebar__profile-box {
   width: 100%;
   background-color: #fff;
 }
 
-.profile-box__img-fondo{
+.profile-box__img-fondo {
   width: 100%;
 }
 
-.profile-box__content{
+.profile-box__content {
   position: relative;
   height: calc(360px - 83.73px - 60px);
   padding: 20px;
   padding-bottom: 10px;
 }
 
-.profile-box__img-perfil{
+.profile-box__img-perfil {
   position: absolute;
   height: 90px;
   width: 90px;
@@ -46,92 +45,90 @@ a{
   border: 4px solid #fff;
 }
 
-.profile-box__info-account{
+.profile-box__info-account {
   list-style: none;
   margin: 20px 0;
 }
 
-.info_account-item{
+.info_account-item {
   display: flex;
   justify-content: space-between;
   margin: 5px 0;
 }
 
-.info_account-item p{
+.info_account-item p {
   font-size: 13px;
   color: #777;
 }
 
-.info_account-item span{
+.info_account-item span {
   font-size: 13px;
   color: #2874b1;
 }
 
-
-.profile-box__nombre{
+.profile-box__nombre {
   margin-top: 30px;
   font-size: 20px;
   font-weight: 600;
   color: #222;
 }
 
-.profile-box__job{
+.profile-box__job {
   font-weight: 500;
   font-size: 14px;
   color: #777;
 }
 
-.profile{
+.profile {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.profile__online{
+.profile__online {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.profile-box__link{
+.profile-box__link {
   display: flex;
   justify-content: space-evenly;
   border-top: 1px solid #ccc;
   align-items: center;
 }
 
-.link__item{
+.link__item {
   display: flex;
   padding: 10px;
   font-size: 13px;
   align-items: center;
 }
 
-.link__item img{
+.link__item img {
   width: 20px;
 }
 
-.link__item:nth-child(2){
+.link__item:nth-child(2) {
   border-left: 1px solid #ccc;
 }
 
-.sidebar__activity{
+.sidebar__activity {
   margin-top: 12px;
   background-color: #fff;
   margin-top: 12px;
   padding-top: 10px;
 }
 
-.discover-more-box-link{
+.discover-more-box-link {
   width: 100%;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-top: 1px solid #ccc;
-
 }
 
-.discover-more-link{
+.discover-more-link {
   color: #2874b1;
   font-size: 12px;
   font-weight: 500;
@@ -139,16 +136,15 @@ a{
   transition: 0.5s;
 }
 
-.discover-more-link:hover{
+.discover-more-link:hover {
   background-color: #edf3f8;
 }
 
-.activity-lista-box{
-  padding: 10px 20px; 
+.activity-lista-box {
+  padding: 10px 20px;
 }
 
-
-.activity-lista-box__item{
+.activity-lista-box__item {
   display: flex;
   align-items: center;
   font-size: 12px;
@@ -157,83 +153,72 @@ a{
   transition: 0.5s;
 }
 
-.activity-lista-box__item:hover{
+.activity-lista-box__item:hover {
   background-color: #edf3f8;
 }
 
-.item__icono{
+.item__icono {
   font-size: 1.2rem;
   margin-right: 10px;
   font-weight: 600;
   color: #2874b1;
 }
 
-.activity-lista-box__title{
+.activity-lista-box__title {
   margin-bottom: 10px;
   color: #777;
   font-size: 14px;
   font-weight: 500;
 }
 
-.item__description{
+.item__description {
   font-size: 12px;
   font-weight: 500;
   color: #888;
 }
 
-.profile-menu{
+.profile-menu {
+  z-index: 10;
   /* display: none; */
   visibility: hidden;
   position: absolute;
-  top: 100%;
-  right: 0;
   background-color: #222;
   padding: 20px;
   width: 320px;
   transition: 0.3s;
-  max-height: 0;
+  max-height: 0px;
+  top: 100%;
+  right: 0;
+  overflow: hidden;
 }
 
-.profile-menu__user-info,
-.profile-menu__separacion,
-.profile-menu__links-box{
-  visibility: hidden;
-}
-
-.input__profile-menu:checked ~ .profile-menu{
+.input__profile-menu:checked ~ .profile-menu {
   visibility: visible;
   max-height: 400px;
 }
 
-.input__profile-menu:checked ~ .profile-menu .profile-menu__user-info,
-.input__profile-menu:checked ~ .profile-menu .profile-menu__user-info,
-.input__profile-menu:checked ~ .profile-menu .profile-menu__links-box{
-  visibility: visible;
-  transition: 0.5s;
-}
-
-.input__profile-menu{
+.input__profile-menu {
   display: none;
   visibility: hidden;
 }
 
-.header__right{
+.header__right {
   position: relative;
 }
 
-.user-info__foto-perfil{
+.user-info__foto-perfil {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   margin-right: 15px;
 }
 
-.profile-menu__user-info{
+.profile-menu__user-info {
   display: flex;
   align-items: center;
 }
 
-.link-box__link{
+.link-box__link {
   display: flex;
   margin: 12px 0;
   align-items: center;
@@ -241,56 +226,56 @@ a{
 }
 
 .user-info__name,
-.link-box__name-action{
+.link-box__name-action {
   color: #fff;
 }
 
-.link-box__image-action{
+.link-box__image-action {
   width: 35px;
   border-radius: 50%;
   margin-right: 15px;
 }
 
-.link-box__name-action{
+.link-box__name-action {
   width: 100%;
   font-size: 14px;
 }
 
-.user-info__see-profile{
+.user-info__see-profile {
   color: #c9dbf8;
   font-size: 13px;
 }
 
-.user-info__name{
+.user-info__name {
   font-weight: 500;
- margin-bottom: -7px;
+  margin-bottom: -7px;
 }
 
-.profile-menu .profile-menu__separacion{
+.profile-menu .profile-menu__separacion {
   margin: 15px 0 10px;
 }
 
-.crear-post-box__top{
+.crear-post-box__top {
   width: 100%;
 }
 
-.crear-post-box{
+.crear-post-box {
   background-color: #fff;
 }
 
-.crear-post-box__top{
+.crear-post-box__top {
   display: flex;
   align-items: center;
   padding: 20px 25px 15px;
 }
 
-.crear-post-box__top .top__imagen{
+.crear-post-box__top .top__imagen {
   width: 35px;
   height: 35px;
   margin-right: 10px;
 }
 
-.top__escribir{
+.top__escribir {
   border: 0;
   outline: none;
   background: transparent;
@@ -298,21 +283,66 @@ a{
   width: 100%;
 }
 
-.top__escribir::placeholder{
+.top__escribir::placeholder {
   font-size: 14px;
 }
 
-.crear-post-box__links{
+.crear-post-box__links {
   display: flex;
   justify-content: space-evenly;
 }
 
-.crear-post-box__links .link__icon{
+.crear-post-box__links .link__icon {
   font-size: 1.4rem;
   color: #2874b1;
+  margin-right: 5px;
 }
 
-.crear-post-box__link{
+.crear-post-box__link {
   display: flex;
   align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 100%;
+  height: 40px;
+}
+
+.link__nombre {
+  font-size: 13px;
+}
+
+.crear-post-box__links .crear-post-box__link:last-child {
+  border-right: 0;
+  background-color: #2874b1;
+  color: #fff;
+}
+
+.short-by {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.short-by__division {
+  flex: 1;
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.short-by__palabra {
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.short-by__palabra span {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.short-by__palabra img {
+  width: 12px;
+  margin-left: 3px;
+  z-index: 0;
 }
