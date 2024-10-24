@@ -19,6 +19,10 @@ a {
   grid-area: sidebar;
 }
 
+.main {
+  grid-area: main;
+}
+
 .sidebar__profile-box {
   width: 100%;
   background-color: #fff;
@@ -345,4 +349,71 @@ a {
   width: 12px;
   margin-left: 3px;
   z-index: 0;
+}
+
+.aside {
+  background-color: #fff;
+  grid-area: aside;
+}
+
+.contenedor-post {
+  padding: 20px 25px 5px;
+  margin: 5px 0 15px;
+  background-color: #fff;
+}
+
+.contenedor-post__info-propietario {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contenedor-post__text-post {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #5f5f5f;
+}
+
+.contenedor-post__foto-propietario {
+  width: 35px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.contenedor-post__imagen-post {
+  width: 100%;
+}
+
+.info-propietario__contenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-propietario__nombre {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-propietario__hora-post,
+.info-propietario__perfil-profesional {
+  font-size: smaller;
+  margin-top: -2px;
+  color: #5f5f5f;
+}
+
+.contenedor-post__estadisticas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.estadisticas__izquierda {
+  display: flex;
+  align-items: center;
+}
+
+.estadisticas__imagen-reacciones {
+  width: 15px;
+  height: 15px;
 }
